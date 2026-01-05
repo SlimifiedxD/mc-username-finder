@@ -58,7 +58,7 @@ def create_all_usernames():
             print(f'Found Name: {name}')
             with open('names.txt', 'a') as file:
                 file.write(name + '\n')
-        time.sleep(1.25)
+        time.sleep(1)
 
 def create_random_username(length):
     return ''.join(random.choices(CHARACTER_POOL, k=length))
